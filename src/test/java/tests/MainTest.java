@@ -23,18 +23,6 @@ public class MainTest extends BaseTest {
     }
 
     @Test
-    public void testDashboardLinkFromMainPage_WhenClick() {
-
-        String expectedResult = "Dashboard";
-
-        String actualResult = openBaseUrl()
-                .dashboardButtonClick()
-                .readActualItemText(expectedResult);
-
-        Assert.assertEquals(actualResult, expectedResult);
-    }
-
-    @Test
     public void testLinkFromMainPageToDashboardAndBackToMainPage_WhenClick() {
 
         String expectedResult = "Сurrent weather and forecast - OpenWeatherMap";
